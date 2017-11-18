@@ -1,0 +1,25 @@
+{
+  "name": "{{company}}/{{app}}",
+  "description": "",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.1.0",
+    "marc-mabe/php-enum": "~3.0",
+    "ext-xml": "*",
+    "ext-zip": "*",
+    "ext-mbstring": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.4" 
+  },
+  "autoload": {
+    "psr-4": {
+      "{{company}}\\{{app}}\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "tests\\{{company}}\\{{app}}\\": "tests/"
+    }
+  }
+}
